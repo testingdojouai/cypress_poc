@@ -7,13 +7,13 @@ class UserPage {
   }
 
   createUser() {
-    var name = faker.name.firstName();
-    var last_name = faker.name.lastName();
-    var email = faker.internet.email();
-    var address = faker.address.streetName();
-    var university = faker.company.companyName();
-    var profile = faker.name.jobArea();
-    var age = faker.random.number(100);
+    let name = faker.name.firstName();
+    let last_name = faker.name.lastName();
+    let email = faker.internet.email();
+    let address = faker.address.streetName();
+    let university = faker.company.companyName();
+    let profile = faker.name.jobArea();
+    let age = faker.random.number(100);
 
     cy.get('#user_name').type(name);
     cy.get('#user_lastname').type(last_name);
